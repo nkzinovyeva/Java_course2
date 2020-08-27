@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="ajaxhelper.js"></script>
+<link rel="stylesheet" type="text/css" href="webAppExercises.css">
+<meta charset="ISO-8859-1">
+<title>Full Stack Exercise 3</title>
+</head>
+
+<body>
+
+	<h1>Add Student</h1>
+
+	<p>Insert the info:</p>
+
+	<form name="formStudent" action="/addStudent" method="POST">
+
+		<label for="id">Id: </label> <input type="text" id="txtId"
+			name="txtId" value="123"><br> 
+			
+		<label for="firstname">Firstname:</label> <input type="text" 
+		id="txtFirstname" name="txtFirstname" value="Mat"><br>
+
+		<label for="lastname">Lastname: </label> <input type="text"
+			id="txtLastname" name="txtLastname" value="Daemon"><br>
+
+		<label for="streetaddress">Street address: </label> <input type="text"
+			id="txtStreetaddress" name="txtStreetaddress" value="street"><br>
+
+		<label for="postcode">Postcode: </label> <input type="text"
+			id="txtPostcode" name="txtPostcode" value="code"><br> 
+		<label for="postoffice">Postoffice: </label> <input type="text"
+			id="txtPostoffice" name="txtPostoffice" value="office"><br>
+
+		<input type="button" value="Add" onclick= addStudent();>
+		<input type="button" value="Cancel" onclick=window.location.replace("students.html")>
+
+	</form>
+	
+	<script src="studentAdd.js"></script>
+
+</body>
+</html>

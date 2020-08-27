@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="ajaxhelper.js"></script>
+<link rel="stylesheet" type="text/css" href="webAppExercises.css">
+<meta charset="UTF-8">
+<title>Full Stack Exercise 3</title>
+</head>
+<body>
+<h1>Delete the Student</h1>
+
+	<p>Insert the id:</p>
+
+	<form name="formStudent" action="/deleteStydent" method="POST">
+
+		<label for="id">Id: </label> <input type="text" id="txtId"
+			name="txtId" value="123"><br> 
+
+		<input type="button" value="Submit" onclick= deleteStudent();>
+
+	</form>
+	
+	<script src="studentDelete.js"></script>
+
+</body>
+</html>
